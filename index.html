@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dude, Where's My Band</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="We know where your favourite band is! Check out Dude, Where's My Band to learn where in the world your favourite musician is touring right now!">
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+      <div class="wrapper">
+        <h1>Dude, Where's My Band?</h1>
+        <form id="searchForm">
+          <input type="text" name="search" placeholder="Who are you looking for?">
+          <input type="submit" id="submitButton" value="Find My Band">
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <h2 id="bnd">Hit the 'Submit' Button to search for your favourite band!</h2>
+        <section id="summary">
+          <div class="summaryData">
+            <ul>
+              <li><p>Venue Name</p><p class="insertName"></p></li>
+              <li><p>City</p><p class="insertCityRegion"></p></li>
+              <li><p>Country</p><p class="insertCountry"></p></li>
+              <li><p>Tickets</p><p class="insertTickets"></p></li>
+            </ul>
+          </div>
+        <div id="map"></div>
+      </section>
+      <section id="tourInfo">
+      <h3>Next Stops</h3>
+      <ul>
+      </ul>
+      </section>
+    </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div class="footerL">
+          <p>Code by <a href="http://www.adambrady.ca">Adam Brady</a></p>
+        </div>
+        <div class="footerR">
+          <p>API's from <a href="http://news.bandsintown.com/home">BandsInTown</a> and <a href="https://www.google.ca/maps">Google Maps</a></p>
+        </div>
+      </div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-D02D3mZhQNdJwcIuuo4BI-q6du7J55M"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
