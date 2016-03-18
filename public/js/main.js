@@ -126,7 +126,7 @@ app.bandsIn2 = function (band) {
       app.dateText = 'on ' + finalMonthText + ' ' + split[2];
     } //end else
     app.placeText();
-    $(res).slice(1,4).each(function (i, place) {
+    $(res).slice(1, 4).each(function (i, place) {
       console.log(i);
       var fDate = place.datetime.slice(0, 10);
       var dateTest = Date.parse(fDate).toString('MMMM dS, yyyy');
